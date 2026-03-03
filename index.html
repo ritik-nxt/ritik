@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.box {
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #dd2476;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>🔐 Private Page</h2>
+    <p>Only Palak can unlock this ❤️</p>
+    <input type="password" id="password" placeholder="Enter Password">
+    <br>
+    <button onclick="checkPassword()">Unlock 💖</button>
+</div>
+
+<script>
+function checkPassword() {
+    var pass = document.getElementById("password").value;
+
+    if(pass === "plk143") {
+        window.location.href = "secret.html";
+    } else {
+        alert("Wrong password 😜 Try again!");
+    }
+}
+</script>
+
+</body>
+</html>
